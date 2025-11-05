@@ -1,4 +1,5 @@
-# workshop1 
+# workshop1
+*That`s not bad*
 
 ## Task 1
 | Git Command | Explanation |
@@ -36,3 +37,6 @@
 | `git push -u origin old` | Pushes the **old** branch to GitHub and sets upstream tracking. |
 | `git push` | Uploads local commits to GitHub. |
 | `git checkout main` | Switches back to the **main** branch. |
+
+
+
