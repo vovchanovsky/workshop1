@@ -5,6 +5,7 @@
 |------------|-------------|
 | `git init` | Initializes a new local Git repository. |
 | `git add <file>` | Stages a specific file to be included in the next commit. |
+| `git status` | Shows the current state of the working directory and staged files. |
 | `git commit -m "<message>"` | Creates a commit with the staged changes. |
 | `git branch -M main` | Renames the current branch to **main**. |
 | `git remote add origin <URL>` | Connects the local repository to a remote GitHub repo. |
