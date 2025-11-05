@@ -1,0 +1,191 @@
+D:\>mkdir Lexicon\workshops\workshop1
+
+D:\>cd Lexicon\workshops\workshop1
+
+D:\Lexicon\workshops\workshop1>echo "# workshop1" >> README.md
+
+D:\Lexicon\workshops\workshop1>git init
+Initialized empty Git repository in D:/Lexicon/workshops/workshop1/.git/
+
+D:\Lexicon\workshops\workshop1>git add README.md
+
+D:\Lexicon\workshops\workshop1>git commit -m "Added README.md"
+[master (root-commit) dfd00a4] Added README.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+D:\Lexicon\workshops\workshop1>git branch -M main
+
+D:\Lexicon\workshops\workshop1>git remote add origin https://github.com/vovchanovsky/workshop1.git
+
+D:\Lexicon\workshops\workshop1>git push -u origin main
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/vovchanovsky/workshop1.git/'
+
+D:\Lexicon\workshops\workshop1>git config --global user.email "pavlo.vovchanovsky@gmail.com"
+
+D:\Lexicon\workshops\workshop1>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 81.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vovchanovsky/workshop1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\Lexicon\workshops\workshop1>type NUL > notes.txt
+
+D:\Lexicon\workshops\workshop1>type NUL > logs.txt
+
+D:\Lexicon\workshops\workshop1>echo 'logs.txt' > .gitignore
+
+D:\Lexicon\workshops\workshop1>echo logs.txt > .gitignore
+
+D:\Lexicon\workshops\workshop1>echo # workshop1 >> README.md
+
+D:\Lexicon\workshops\workshop1>git add .
+
+D:\Lexicon\workshops\workshop1>git commit -m "Added files, edited Readme"
+[main f855569] Added files, edited Readme
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 notes.txt
+
+D:\Lexicon\workshops\workshop1>git pull
+Already up to date.
+
+D:\Lexicon\workshops\workshop1>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 383 bytes | 95.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vovchanovsky/workshop1.git
+   dfd00a4..f855569  main -> main
+
+D:\Lexicon\workshops\workshop1>git revert
+usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>...
+   or: git revert (--continue | --skip | --abort | --quit)
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible
+    --[no-]strategy <strategy>
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]reference      use the 'reference' format to refer to commits
+
+
+D:\Lexicon\workshops\workshop1>echo # workshop1 >> README.md
+
+D:\Lexicon\workshops\workshop1>cat README.md
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Lexicon\workshops\workshop1>type README.md
+"# workshop1"
+# workshop1
+# workshop1
+
+D:\Lexicon\workshops\workshop1>echo # workshop1 > README.md
+
+D:\Lexicon\workshops\workshop1>type README.md
+# workshop1
+
+D:\Lexicon\workshops\workshop1>git commit --amend
+[main 04e3597] Added files, edited Readme
+ Date: Wed Nov 5 09:30:30 2025 +0100
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 notes.txt
+
+D:\Lexicon\workshops\workshop1>git commit --amend
+[main da2ae32] Added files, edited Readme
+ Date: Wed Nov 5 09:30:30 2025 +0100
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 notes.txt
+
+D:\Lexicon\workshops\workshop1>git commit --amend -m "Added files, edited Readme"
+[main 0e080f5] Added files, edited Readme
+ Date: Wed Nov 5 09:30:30 2025 +0100
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 notes.txt
+
+D:\Lexicon\workshops\workshop1>git push
+To https://github.com/vovchanovsky/workshop1.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/vovchanovsky/workshop1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Lexicon\workshops\workshop1>git pull
+Merge made by the 'ort' strategy.
+
+D:\Lexicon\workshops\workshop1>git push
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 367 bytes | 367.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/vovchanovsky/workshop1.git
+   f855569..1845114  main -> main
+
+D:\Lexicon\workshops\workshop1>echo # workshop1 > README.md
+
+D:\Lexicon\workshops\workshop1>git pull
+Already up to date.
+
+D:\Lexicon\workshops\workshop1>git commit -m "Edit #2 Readme"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Lexicon\workshops\workshop1>git pull
+Already up to date.
+
+D:\Lexicon\workshops\workshop1>git push
+Everything up-to-date
+
+D:\Lexicon\workshops\workshop1>git commit -a -m "Edit #2 Readme"
+[main b75a07e] Edit #2 Readme
+ 1 file changed, 1 deletion(-)
+
+D:\Lexicon\workshops\workshop1>git pull
+Already up to date.
+
+D:\Lexicon\workshops\workshop1>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vovchanovsky/workshop1.git
+   1845114..b75a07e  main -> main
